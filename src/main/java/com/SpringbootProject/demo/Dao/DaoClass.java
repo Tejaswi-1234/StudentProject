@@ -7,10 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-@Repository
+@Repository //used to interact with database
 public class DaoClass {
 	@Autowired
-	private JdbcTemplate jdbcTemplate;
+	private JdbcTemplate jdbcTemplate; //used to simplify use of JDBC 
 	
 	public DaoClass(JdbcTemplate jdbcTemplate) {
 		this.jdbcTemplate=jdbcTemplate;
