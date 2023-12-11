@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.SpringbootProject.demo.Dao.DaoClass;
 
-@Service
+@Service //Acts as mediator between presentation and data access layer
 public class ServiceClass {
 	@Autowired
 	private DaoClass daoClass;
